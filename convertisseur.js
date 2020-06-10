@@ -1,4 +1,11 @@
 GET https:('//api.exchangeratesapi.io/latest HTTP/1.1')
+.then(function(body) {
+  return body.json();
+})
+then(function(json) {
+  var span = document.getElemenById("GBP");
+  span.innerHTML = json.rates;
+})
 
 {
   "base": "EUR",
@@ -14,7 +21,7 @@ GET https:('//api.exchangeratesapi.io/latest HTTP/1.1')
   }
 }
 
-// ========================================================================================
+// ================ Convertisseur taux fictif : ================
 
 
 function convertirEnEuros() {
