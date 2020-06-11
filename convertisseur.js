@@ -1,4 +1,17 @@
-fetch('https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest')
+// fetch('https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest') 
+// .then(function(body) {
+//   return body.json();
+// })
+// .then(function(json) {
+//   var span = document.getElementById("GBP");
+//   span.innerHTML = json.rates;
+// });
+
+// ================ autre api ==================================
+//fetch('https://v6.exchangerate-api.com/v6/8c2c99cb810468cd9a4ec1d6/latest/USD')
+//key: 8c2c99cb810468cd9a4ec1d6
+// ================ autre api ==================================
+fetch('http://data.fixer.io/api/latest?access_key=d99a8678897649c56f1a81e51f679f30')
 .then(function(body) {
   return body.json();
 })
@@ -6,13 +19,6 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/lates
   var span = document.getElementById("GBP");
   span.innerHTML = json.rates;
 });
-
-// ================ autre api ==================================
-//fetch('https://v6.exchangerate-api.com/v6/8c2c99cb810468cd9a4ec1d6/latest/USD')
-//key: 8c2c99cb810468cd9a4ec1d6
-// ================ autre api ==================================
-
-
 
 // ================ Convertisseur taux fictif : ================
 
