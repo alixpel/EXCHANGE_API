@@ -1,4 +1,4 @@
-fetch('https://api.exchangeratesapi.io/latest HTTP/1.1')
+fetch('https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest')
 .then(function(body) {
   return body.json();
 })
@@ -6,6 +6,12 @@ fetch('https://api.exchangeratesapi.io/latest HTTP/1.1')
   var span = document.getElementById("GBP");
   span.innerHTML = json.rates;
 });
+
+// ================ autre api ==================================
+//fetch('https://v6.exchangerate-api.com/v6/8c2c99cb810468cd9a4ec1d6/latest/USD')
+//key: 8c2c99cb810468cd9a4ec1d6
+// ================ autre api ==================================
+
 
 
 // ================ Convertisseur taux fictif : ================
